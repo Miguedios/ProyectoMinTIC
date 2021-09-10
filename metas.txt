@@ -1,0 +1,55 @@
+- crear clases objetivo y usuario
+ - usuario: nombre de usuario, contraseña, lista de objetivos
+ - objetivos: nombre del objetivo, descripcion(opcional), horas totales, horas realizadas, horas pendientes (hTot - hReali), horario
+(Metodos de usuario)
+- en la pagina de registro (conexion) se guarde en una lista un usuario nuevo
+- en la pagina de inicioSesion (conexion) se llama a la lista y se comprueba que el usuario y contraseña exitan y coincidan
+- eliminar usuario (opcional)
+(Metodos de objetivos)
+- horario manejado por codigo hash: (dia de la semana)*24 + (hora del dia)
+- crear objetivo: ingresar un nuevo objetivo a una lista (nombre, hTot, descripcion, hReali = 0, hPend = hTot)
+- eliminar objetivo(s)
+- modificar objetivo: se puede cambiar el nombre, descripcion, horario, horasTot, hReali
+- consultar objetivo(s)
+- comprobar que se cumpla el objetivo (confirmación manual)
+- comprobar que se cumpla el objetivo (cronometro) (Aun no)
+- Permanencia de datos (Bases de datos o creación de archivos)
+(Bases de datos)
+- Crear las conecciones para la base de datos
+- Crear coneccion con servidor (HTML-Java-BBDD)
+(HTML-CSS)
+- Pagina inicioSesion (botones de inicio sesion y registro)
+- Pagina registro 
+- Pagina inicio o ppal
+(Main Page)
+-header: nombre de app, notificación de objetivo cercano(tipo campanita)? 
+-body:   
+        menú superior: admObjetivos (creación, eliminación, modificación, consulta), admUsuario(CerrarSesion, EliminarUsuario)
+        Centro de la página: Nombre de usuario, objetivo cercano con hora y día, calendario del día(Camila), calendario de la semana (Miguel)
+        
+- Pagina de creación
+        menú superior: admObjetivos (creación, eliminación, modificación, consulta), admUsuario(CerrarSesion, EliminarUsuario)
+        Centro de la página: Calendario de la semana (Para seleccionar, en caso de no poderse seleccionar se pone rojo)
+        Campos para escribir: nombre, descripción, horas a dedicar
+
+- Página de eliminación
+        menú superior: admObjetivos (creación, eliminación, modificación, consulta), admUsuario(CerrarSesion, EliminarUsuario)
+        Centro de la página: Lista de objetivos con opción para seleccionarlos
+        
+- Página de modificación
+        menú superior: admObjetivos (creación, eliminación, modificación, consulta), admUsuario(CerrarSesion, EliminarUsuario)
+        Centro de la página: Lista de objetivos con opción para seleccionarlos
+                             Calendario de la semana en blanco
+                             Espacios de nombre, descripción y horas totales para modificar
+
+- Página de consulta
+        menú superior: admObjetivos (creación, eliminación, modificación, consulta), admUsuario(CerrarSesion, EliminarUsuario)
+        Centro de la página: Lista de objetivos con opción para seleccionarlos
+                             Calendario de la semana en blanco
+                             Espacios de nombre, descripción y horas totales sin modificar
+
+
+
+
+https://www.youtube.com/watch?v=d2OimI0vRYg pato hp que me toca hacer pero con cariño
+
