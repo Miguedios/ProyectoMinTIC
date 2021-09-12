@@ -1,0 +1,8 @@
+body{
+    background-image: url(../imagenes/image.jpg);
+    background-size: cover;
+}
+a{
+    text-decoration: none;
+    text-align: right;
+}

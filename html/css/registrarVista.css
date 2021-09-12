@@ -1,9 +1,9 @@
 body{
     font-family: Arial, Helvetica, sans-serif;
     margin: 0;
-    background: url(image.jpg);
+    background: url(../imagenes/image.jpg) no-repeat center top;
     background-size: cover;
-    background-attachment: fixed;
+    height: 100vh;
 }
 
 *{
