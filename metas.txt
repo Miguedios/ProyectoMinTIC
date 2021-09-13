@@ -1,5 +1,5 @@
 - crear clases objetivo y usuario
- - usuario: nombre de usuario, contraseña, lista de objetivos
+ - usuario: nombre de usuario, contraseña, lis  ta de objetivos
  - objetivos: nombre del objetivo, descripcion(opcional), horas totales, horas realizadas, horas pendientes (hTot - hReali), horario
 (Metodos de usuario)
 - en la pagina de registro (conexion) se guarde en una lista un usuario nuevo
