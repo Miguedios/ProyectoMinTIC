@@ -1,0 +1,57 @@
+.body{
+    background: burlywood;
+    font-family: georgia, 'Times New Roman', Times, serif;
+    color: #333;
+    font-size: 1.3rem;
+    margin: 0;
+    line-height: 1.6em;
+}
+a{
+    text-decoration: none;
+}
+p{
+    margin-bottom: 1.6rem;
+}
+h1{
+    font-style: 2rem;
+    line-height: 1.3rem;
+}
+.container{
+    width: 85%;
+    max-width:  850px;
+    margin: 0 auto;
+}
+.header{
+    background: #333;
+    color: white;
+    padding: 2rem 0;
+}
+.logo-nav-container{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logo{
+    width: 40px;
+    border-radius: 15px;
+}
+.header a{
+    color: white;
+}
+.navigation ul{
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+ .navigation ul li{
+     display: inline-block;
+ }
+  .navigation ul li a{
+      display: block;
+      padding: 0.5rem 1rem;
+      transition: all 0.4s linear;
+  }
+   .navigation ul li a:hover{
+       background: #4a4a4a;
+   }
