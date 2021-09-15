@@ -22,7 +22,7 @@
 - Pagina registro 
 - Pagina inicio o ppal
 (Main Page)
--header: nombre de app, notificación de objetivo cercano(tipo campanita)? 
+-header: nombre de app, notificación de objetivo cercano(tipo campanita)
 -body:   
         menú superior: admObjetivos (creación, eliminación, modificación, consulta), admUsuario(CerrarSesion, EliminarUsuario)
         Centro de la página: Nombre de usuario, objetivo cercano con hora y día, calendario del día(Camila), calendario de la semana (Miguel)
