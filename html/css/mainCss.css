@@ -2,7 +2,7 @@
     background: burlywood;
     font-family: georgia, 'Times New Roman', Times, serif;
     color: #333;
-    font-size: 1.3rem;
+    font-size: 1.2rem;
     margin: 0;
     line-height: 1.6em;
 }
@@ -51,10 +51,15 @@ h1{
   .navigation ul li a{
       display: block;
       padding: 0.5rem 1rem;
+      font-size: 1.2rem;
+      border-radius: 5px;
       transition: all 0.4s linear;
   }
    .navigation ul li a:hover{
-       background: #4a4a4a;
+    background: thistle;
+    color: purple;
+    border-radius: 5px;
+    font-size: 1.7rem;
    }
 .logo{
     width: 60px;
@@ -107,9 +112,12 @@ h2{
               transition: all 0.4s linear;
           }
            .navigation ul li a:hover{
-               background: #4a4a4a;
+               background: thistle;
+               color: purple;
+               font-size: 1.4rem;
            }
-    .main{
-        padding-top: 20rem;
-    }
+}
+.menu-icon:hover{
+    background: thistle;
+    color: purple;
 }

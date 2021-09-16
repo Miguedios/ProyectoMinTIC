@@ -9,4 +9,7 @@ jQuery('document').ready(function($){
             menu.addClass('show');
         }
     });
+    while(navigation.ul.hasClass('show')){
+        addClass('padding-top: 20rem;');
+    }
 });
