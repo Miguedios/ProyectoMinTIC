@@ -1,6 +1,7 @@
 package clases;
 import java.util.Calendar;
 
+
 public class Hash {
     public static int calculateHash(int dia, int hora) {
         return (dia * 24 + hora);
