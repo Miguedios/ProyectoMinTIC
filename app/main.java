@@ -39,7 +39,7 @@ public class main {
                                     Objetivo.crearObjetivo(login);
                                     break;
                                 case 2: 
-                                    Objetivo.crearObjetivo(login);
+                                    Objetivo.consultarObjetivo(login);
                                     break;
                                 case 3:
                                     break;

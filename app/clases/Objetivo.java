@@ -79,7 +79,7 @@ public class Objetivo {
         login.get_hashlist().add(nuevoObj);
     }
 
-    public void consultarObjetivo (Usuario login) {
+    public static void consultarObjetivo (Usuario login) {
         System.out.println("Consultar objetivos");
         if (login.get_hashlist().isEmpty()) {
             System.out.println("No hay objetivos");
