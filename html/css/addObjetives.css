@@ -5,9 +5,12 @@ body{
 header{
     width: 100%;
     background: #4E9AAB;
+    display: flex;
+    align-items: baseline;
+    height: 50px;
 }
 #btn-menu{
-    display: none;
+    display: block;
 }
 header label{
     display: none;
@@ -15,7 +18,7 @@ header label{
     height: 30px;
     padding: 10px;
     color: #fff;
-    font-size: 30px;
+    font-size: 25px;
     border-right: 1px solid #fff;
 }
 header label:hover{
@@ -29,7 +32,16 @@ header label:hover{
     padding: 0;
     display: flex;
     justify-content: flex-end;
+    right: 0px;
+    position: fixed;
+    top: 0px;
 }
+header h1{
+    position: fixed;
+    top: -15px;
+    color: #fff;
+}
+
 
 
 .menu li{
@@ -37,8 +49,12 @@ header label:hover{
 }
 .a1{
     border-left: 1px solid #fff;
-    background: #0c4a58;
+    background: #247b8f;
     cursor: default;
+}
+.a1:hover{
+    background: rgba(0, 0, 0, 0.3);
+    color: #4E9AAB;
 }
 a{
     background: #6fcce0bb;
@@ -56,23 +72,42 @@ a{
 @media (max-width: 768px) {
     header label{
         display: block;
-        margin-right: 15px;
+    }
+
+    header{
+        text-align: center;
+        justify-content: space-between;
+    }
+    header h1{
+        position: absolute;
+        left: 55px;
+        color: #fff;
     }
     .menu{
         position: absolute;
         background: #4E9AAB;
         width: 70%;
-        margin-left: 100%;
+        display: flex;
     }
     .menu ul{
+        display: flex;
+        justify-content: flex-end;
         flex-direction: column;
+        position: absolute;
+        top: 25px;
+        left: 75%;
+        width: 90%;
     }
     .menu li{
         border-top: 1px solid #fff;
         text-align: center;
     }
-    #btn-menu:checked ~ .menu {
-        margin: 0;
+    #btn-menu:checked ~ .menu ul{
+        flex-direction: column;
+        position: absolute;
+        top: 25px;
+        left: 0;
+        right: 70px;
         transition: all 0.5s;
     }
     
