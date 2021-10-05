@@ -20,27 +20,43 @@
             <nav class="nav-icon">
                 <ul>
                     <ul>
-                        <li><a href="html/addObjetives.html" class="a1">Anadir Objetivo</a></li>
-                        <li><a href="html/editObjetives.html" class="a2">Editar Objetivo</a></li>
-                        <li><a href="html/searchObjetives.html" class="a3">Consultar Objetivo</a></li>
-                        <li><a href="html/removeObjetives.html" class="a4">Eliminar Objetivo</a></li>
-                        <li><a href="#">Cerrar Sesión</a></li>
+                        <li><a href="html/addObjetives.html" class="a1">Add Objetive</a></li>
+                        <li><a href="html/editObjetives.html" class="a2">Edit Obejtive</a></li>
+                        <li><a href="html/searchObjetives.html" class="a3">Search Objetive</a></li>
+                        <li><a href="html/removeObjetives.html" class="a4">Delete Objetive</a></li>
+                        <li><a href="#">Log Out</a></li>
                     </ul>
                     </li>
                 </ul>
             </nav>
         </div>
     </header>
-    <label for="name">Name:</label>
-    <input type="text" id="name" name="name"><br><br>
-    <label for="descp">Description</label>
-    <input type="text" id="descp" name="descp">
-    <div class="calendar"><h1>CALENDAR</h1></div>
-    <label for="meths">Methods</label>
-    <input type="checkbox" id="metBox" name="Pomodoro">
-    <input type="checkbox" id="metBox" name="POSSEC">
-    <input type="checkbox" id="metBox" name="EissenHower">
-    <input type="checkbox" id="metBox" name="Own Rithm">
+<!--lo de arriba fue el header y el menu de inicio-->
+    <div class="lside">
+        <label for="name" class="l1">Name:</label>
+        <input type="text" id="name" name="name"> 
+        <label for="descp" class="l2">Description:</label>
+        <textarea name="descp" id="descp" cols="30" rows="25"></textarea>
+    </div>
+    <div class="cside">
+        <h1>CALENDAR</h1>
+        <div class="aBox"></div>
+        <h1 class="cb1">CANCEL</h1>
+        <h1 class="sb1">SAVE</h1>
+    </div>
+    <div class="rside">
+        <label for="meths" class="meths">Methods</label><br>
+        <!--Label Methods-->
+        <input type="checkbox" id="metBox1" name="POSSEC">
+        <label for="metBox1" class="mb1">POSSEC</label><br>
+        <input type="checkbox" id="metBox2" name="EissenHower">
+        <label for="metBox2" class="mb2">EissenHower</label><br>
+        <input type="checkbox" id="metBox3" name="Pomodoro">
+        <label for="metBox3" class="mb3">Pomodoro</label><br>
+        <input type="checkbox" id="metBox4" name="Own Rithm">
+        <label for="metBox4" class="mb4">Own Rithm</label>
+        <div class="objList"><h2>Objetive's List</h2></div>
+    </div>
 
 </body>
 
