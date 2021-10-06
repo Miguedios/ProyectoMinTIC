@@ -10,7 +10,7 @@ header{
     height: 50px;
 }
 #btn-menu{
-    display: block;
+    display: none;
 }
 header label{
     display: none;
@@ -33,26 +33,25 @@ header label:hover{
     display: flex;
     justify-content: flex-end;
     right: 0px;
-    position: fixed;
+    position: absolute;
     top: 0px;
 }
 header h1{
-    position: fixed;
+    position: absolute;
     top: -15px;
     color: #fff;
 }
-
-
-
 .menu li{
     border-right: 1px solid #fff;
 }
 .a1{
     border-left: 1px solid #fff;
+}
+.a3{
     background: #247b8f;
     cursor: default;
 }
-.a1:hover{
+.a3:hover{
     background: rgba(0, 0, 0, 0.3);
     color: #4E9AAB;
 }
@@ -65,15 +64,200 @@ a{
 }
 .menu li a{
     display: block;
-    padding: 15px 20px;
+    padding: 15px 20px 25px 20px;
+    height: 20px;
     color: #fff;
     text-decoration: none;
-}  
+}
+/*  Body - Casilla y etiqueta de nombre 
+    ->     Casilla y etiqueta de descripción*/
+.lside{
+    border: 0;
+    display: block;
+    padding: 0;
+    width: 20%;
+    background: #ef9cff;
+    height: 637px;
+}
+.aOb1{
+    font-size: 25px;
+    top: 40px;
+    position: absolute;
+    left: 12px;
+}
+.l1{
+    position: absolute;
+    top: 125px;
+    left: 12px;
+}
+#name{
+    position: absolute;
+    top: 145px;
+    left: 12px;
+    width: 17.5%;
+}
+.l2{
+    position: absolute;
+    top: 205px;
+    left: 12px;
+}
+#descp{
+    position: absolute;
+    top: 225px;
+    left: 12px;
+    width: 17.5%;
+}
+/*  Cajón de calendario - */
+.cside{
+    border: 0;
+    display: block;
+    padding: 0;
+    width: 60%;
+    background: #69daee;
+    height: 637px;
+    position: absolute;
+    top: 50px;
+    left: 20%;
+    text-align: center;
+}
+.aBox{
+    position: absolute;
+    display: block;
+    width: 95%;
+    height: 470px;
+    left: 17px;
+    background: #fff;
+} 
+/*  Botón de cancel y de save  */
+.cb1{
+    display: block;
+    padding: 10px;
+    background: #4E9AAB;
+    color: #fff;
+    cursor: pointer;
+    width: 150px;
+    left: 370px;
+    top: 540px;
+    position: absolute;
+}
+.cb1:hover{
+    background: #74b2c0;
+}
+.sb1{
+    display: block;
+    padding: 10px;
+    background: #4E9AAB;
+    color: #fff;
+    cursor: pointer;
+    width: 150px;
+    left: 550px;
+    top: 540px;
+    position: absolute;
+}
+.sb1:hover{
+    background: #74b2c0;
+}
+/*  Cajón de lado izquierdo
+    botónes y etiqueta de métodos
+    casilla y etiqueta de horas a dedicar
+    cajón con lista de objetivos
+*/
+.rside{
+    border: 0;
+    display: block;
+    padding: 0;
+    width: 20%;
+    background: #ecaff8;
+    height: 637px;
+    position: absolute;
+    top: 50px;
+    left: 80%;
+    text-align: center;
+}
+/*  Label Methods   */
+.meths{
+    font-size: 25px;
+    position: absolute;
+    top: 15px;
+    left: 60px;
+    display: block;
+    padding: 5px;
+    background: #fff;
+}
+/*  cB1 - tag-> Possec */
+#metBox1{
+    position: absolute;
+    top: 65px;
+    left: 20px;
+}
+.mb1{
+    position: absolute;
+    top: 65px;
+    left: 80px;
+}
+/*  cB2 - tag->Eissenhower */
+#metBox2{
+    position: absolute;
+    top: 105px;
+    left: 20px;
+}
+.mb2{
+    position: absolute;
+    top: 105px;
+    left: 80px;
+}
+/*  cB3 - tag->Pomodoro */
+#metBox3{
+    position: absolute;
+    top: 145px;
+    left: 20px;
+}
+.mb3{
+    position: absolute;
+    top: 145px;
+    left: 80px;
+}
+/*  cB4 - tag->Own Rithm */
+#metBox4{
+    position: absolute;
+    top: 185px;
+    left: 20px;
+}
+.mb4{
+    position: absolute;
+    top:185px;
+    left: 80px;
+}
+/*
+    input de horas dedicadas
+    tag de horas dedicadas
+*/
+.dh1{
+    position: fixed;
+    top: 290px;
+    left: 1005px;
+}
+.dh1t{
+    position: fixed;
+    top: 290px;
+    left: 1145px;
+    width: 5%;
+}
+/*  Cajón de lista de obejtivos   */
+.objList{
+    display: block;
+    width: 95%;
+    height: 360px;
+    position: absolute;
+    top: 270px;
+    left: 5px;
+    background: #247b8f;
+}
+/*   Responsive Desing   */
 @media (max-width: 768px) {
     header label{
         display: block;
     }
-
     header{
         text-align: center;
         justify-content: space-between;
