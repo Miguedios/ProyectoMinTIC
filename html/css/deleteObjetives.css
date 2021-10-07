@@ -25,7 +25,6 @@ header label:hover{
     cursor: pointer;
     background: rgba(0, 0, 0, 0.3);
 }
-
 .menu ul{
     margin: 0;
     list-style: none;
@@ -35,6 +34,7 @@ header label:hover{
     right: 0px;
     position: absolute;
     top: 0px;
+    z-index: 1;
 }
 header h1{
     position: absolute;
@@ -65,80 +65,39 @@ a{
 .menu li a{
     display: block;
     padding: 15px 20px 25px 20px;
-    height: 20px;
+    height: 10px;
     color: #fff;
     text-decoration: none;
 }
-/*  Body - Casilla y etiqueta de nombre 
-    ->     Casilla y etiqueta de descripción*/
-.lside{
-    border: 0;
-    display: block;
-    padding: 0;
-    width: 20%;
-    background: #ef9cff;
-    height: 637px;
+body{
+    background: #3294;
 }
-.aOb1{
-    font-size: 25px;
-    top: 40px;
-    position: absolute;
-    left: 12px;
-}
-.l1{
-    position: absolute;
-    top: 125px;
-    left: 12px;
-}
-#name{
-    position: absolute;
-    top: 145px;
-    left: 12px;
-    width: 17.5%;
-}
-.l2{
-    position: absolute;
-    top: 205px;
-    left: 12px;
-}
-#descp{
-    position: absolute;
-    top: 225px;
-    left: 12px;
-    width: 17.5%;
-}
-/*  Cajón de calendario - */
-.cside{
-    border: 0;
-    display: block;
-    padding: 0;
-    width: 60%;
-    background: #69daee;
-    height: 637px;
-    position: absolute;
-    top: 50px;
-    left: 20%;
-    text-align: center;
-}
-.aBox{
+/*  tabla lista de objetivos   */
+.tableList{
     position: absolute;
     display: block;
-    width: 95%;
-    height: 470px;
-    left: 17px;
     background: #fff;
-} 
-/*  Botón de cancel y de save  */
+    border: 10px solid blueviolet;
+    width: 40%;
+    z-index: 0;
+    height: 70%;
+    top: 15%;
+    left: 30%;
+}
+/*boton de guardar y de cancelar*/
 .cb1{
     display: block;
     padding: 10px;
-    background: #4E9AAB;
+    background: #6a5bf5;
     color: #fff;
+    text-align: center;
+    border-radius: 8px;
     cursor: pointer;
     width: 150px;
-    left: 370px;
-    top: 540px;
-    position: absolute;
+    left: 45%;
+    z-index: 1;
+    top: 88%;
+    position: fixed;
 }
 .cb1:hover{
     background: #74b2c0;
@@ -146,112 +105,20 @@ a{
 .sb1{
     display: block;
     padding: 10px;
-    background: #4E9AAB;
+    background: #6a5bf5;
     color: #fff;
+    text-align: center;
     cursor: pointer;
+    z-index: 2;
     width: 150px;
-    left: 550px;
-    top: 540px;
-    position: absolute;
+    z-index: 1;
+    left: 80%;
+    top: 85%;
+    border-radius: 8px;
+    position: fixed;
 }
 .sb1:hover{
     background: #74b2c0;
-}
-/*  Cajón de lado izquierdo
-    botónes y etiqueta de métodos
-    casilla y etiqueta de horas a dedicar
-    cajón con lista de objetivos
-*/
-.rside{
-    border: 0;
-    display: block;
-    padding: 0;
-    width: 20%;
-    background: #ecaff8;
-    height: 637px;
-    position: absolute;
-    top: 50px;
-    left: 80%;
-    text-align: center;
-}
-/*  Label Methods   */
-.meths{
-    font-size: 25px;
-    position: absolute;
-    top: 15px;
-    left: 60px;
-    display: block;
-    padding: 5px;
-    background: #fff;
-}
-/*  cB1 - tag-> Possec */
-#metBox1{
-    position: absolute;
-    top: 65px;
-    left: 20px;
-}
-.mb1{
-    position: absolute;
-    top: 65px;
-    left: 80px;
-}
-/*  cB2 - tag->Eissenhower */
-#metBox2{
-    position: absolute;
-    top: 105px;
-    left: 20px;
-}
-.mb2{
-    position: absolute;
-    top: 105px;
-    left: 80px;
-}
-/*  cB3 - tag->Pomodoro */
-#metBox3{
-    position: absolute;
-    top: 145px;
-    left: 20px;
-}
-.mb3{
-    position: absolute;
-    top: 145px;
-    left: 80px;
-}
-/*  cB4 - tag->Own Rithm */
-#metBox4{
-    position: absolute;
-    top: 185px;
-    left: 20px;
-}
-.mb4{
-    position: absolute;
-    top:185px;
-    left: 80px;
-}
-/*
-    input de horas dedicadas
-    tag de horas dedicadas
-*/
-.dh1{
-    position: fixed;
-    top: 290px;
-    left: 1005px;
-}
-.dh1t{
-    position: fixed;
-    top: 290px;
-    left: 1145px;
-    width: 5%;
-}
-/*  Cajón de lista de obejtivos   */
-.objList{
-    display: block;
-    width: 95%;
-    height: 360px;
-    position: absolute;
-    top: 270px;
-    left: 5px;
-    background: #247b8f;
 }
 /*   Responsive Desing   */
 @media (max-width: 768px) {
@@ -288,13 +155,12 @@ a{
     }
     #btn-menu:checked ~ .menu ul{
         flex-direction: column;
-        position: absolute;
-        top: 25px;
+        position: fixed;
+        top: 50px;
         left: 0;
         right: 70px;
         transition: all 0.5s;
     }
-    
 }
 
 
